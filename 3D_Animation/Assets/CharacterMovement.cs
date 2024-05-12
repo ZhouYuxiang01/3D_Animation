@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public float speed = 5f; // Speed of the character movement
-    public float rotationSpeed = 100f; // Speed of character rotation
+    public float speed; // Speed of the character movement
+    public float rotationSpeed; // Speed of character rotation
 
     private Animator animator; // Reference to the Animator component
 
