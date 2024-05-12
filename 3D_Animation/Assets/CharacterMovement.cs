@@ -50,5 +50,9 @@ public class CharacterMovement : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            animator.SetTrigger("push");
+        }
     }
 }

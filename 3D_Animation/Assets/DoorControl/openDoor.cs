@@ -1,15 +1,28 @@
 using UnityEngine;
 
-public class openDoor : MonoBehaviour
+public class OpenDoor : MonoBehaviour
 {
     private Animator doorAnimator;
+    public AudioClip openSound; // Sound clip to play when the door opens
 
     private void Start()
     {
-        doorAnimator = this.transform.parent.GetComponent<Animator>();
+        doorAnimator = transform.parent.GetComponent<Animator>();
     }
+
     private void OnTriggerEnter(Collider other)
     {
         doorAnimator.SetTrigger("openDoor");
+
+        // Play the open sound if available
+        PlayOpenSound();
+    }
+
+    private void PlayOpenSound()
+    {
+        if (openSound != null)
+        {
+            AudioSource.PlayClipAtPoint(openSound, transform.position);
+        }
     }
 }
