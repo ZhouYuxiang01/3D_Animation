@@ -53338,7 +53338,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -3.395, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 16.033, z: 0}
 --- !u!1001 &1495328122
 PrefabInstance:
   m_ObjectHideFlags: 0
